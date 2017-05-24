@@ -1,0 +1,190 @@
+html,body {
+	background-color: #FF4C4C;
+	margin: 0;
+	padding: 0;
+}
+
+.title {
+	position: absolute;
+	text-align: center;
+	max-width: 350px;
+	margin: 10px;
+}
+
+.title p:nth-child(1) {
+	font-size: 50px;
+	border: 5px double white;
+}
+
+.title p:nth-child(2){
+	margin: auto;
+	font-size: 25px; 
+	width: 200px;
+}
+
+#reset_button, #erase_button {
+	display: block;
+	margin: auto;
+	margin-top: 40px;
+	padding: 5px;
+	font-size: 14px;
+	border-radius: 5px;
+}
+
+
+.container {
+	position: absolute;
+	background-color: white;
+	width: 592px;
+	height: 592px;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: 33px;
+	margin-left: 370px;
+	padding: 0 auto;
+	border: 3px solid black;
+	border-radius: 3px;
+}
+
+
+.unit {
+	border: 1px solid #CCCCCC;
+	border-radius: 3px;
+	width: 35px;
+	height: 35px;
+	float: left;
+	background-color: white;
+	
+}
+
+.controller {
+	position: absolute;
+	height: 590px;
+	width: 350px;
+	text-align: center;
+	margin: 35px;
+	margin-left: 980px;
+	border: 1px solid white;
+}
+
+.controller .color p, .button-control p {
+	border: 5px double white;
+	padding: 5px;
+	width: 200px;
+	vertical-align: center;
+	margin: auto;
+	font-size: 24px;
+}
+
+.controller .list {
+	margin-top: 10px;
+}
+
+.controller .list .colors {
+	width: 130px;
+	display: inline-block;
+}
+
+.controller .list .colors p {
+	font-size: 14px;
+	color: white;
+	border: none;
+	width: 150px;
+
+}
+
+.black,.red,.orange,.yellow,.green,.blue,.purple {
+	width: 25px;
+	height: 25px;
+	background-color: white;
+	border: 1px solid #CCCCCC;
+	border-radius: 3px;
+	margin-right: 5px;
+	display: inline-block;
+}
+
+.black { background-color: black; margin-left: -12px;}
+.red { background-color: red; margin-left: -7px;}
+.orange {background-color: orange;}
+.yellow {background-color: yellow;margin-left: 30px;}
+.green {background-color: green; margin-left: -12px;}
+.blue { background-color: blue; margin-left: 6px;}
+.purple {background-color: purple; margin-left: -140px;}
+
+
+.buttons .button {
+	width: 80px;
+	height: 80px;
+	border-radius: 70px;
+	background-color: #CCCCCC;
+	z-index: 1;
+}
+
+.up-arrow{
+	margin-top: 20px;
+	margin-left: 140px;
+}
+
+.buttons .arrow_u {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-bottom: 24px solid #7e7e7e;
+	border-left: 24px solid transparent;
+	border-right: 24px solid transparent;
+	margin-top: 22px;
+	margin-left: 15px;
+	z-index: 2;
+}
+
+.right-arrow {
+	margin-left: 220px;
+}
+
+.buttons .arrow_r {
+	position: absolute;
+	border-top: 22px solid transparent;
+	border-right: 22px solid transparent;
+	border-bottom: 22px solid transparent;
+	border-left: 22px solid #7e7e7e;
+	margin-left: 32px;
+	margin-top: 18px;
+	z-index: 2;
+}
+
+.down-arrow {
+	margin-bottom: -70px;
+	margin-left: 143px;
+}
+
+.buttons .arrow_d {
+	position: absolute;
+  	width: 0; 
+  	height: 0; 
+  	border-left: 22px solid transparent;
+  	border-right: 22px solid transparent;
+  	border-top: 22px solid #7e7e7e;
+  	margin-top: 33px;
+ 	margin-left: 17px;
+  	z-index: 2;
+}
+
+.left-arrow {
+	margin-left: 70px;
+	margin-top: -162px;
+}
+
+.buttons .arrow_l {
+position: absolute;
+  width: 0; 
+  height: 0; 
+  border-top: 22px solid transparent;
+  border-bottom: 22px solid transparent; 
+  border-right: 22px solid #7e7e7e; 
+  margin-left: 24px;
+  margin-top:16px;
+  z-index: 2;
+}
+
+
+
