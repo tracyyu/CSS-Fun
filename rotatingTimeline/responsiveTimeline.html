@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Fira+Sans:400,400italic' rel='stylesheet' type='text/css'>
+		<style media="" data-href="https://fonts.googleapis.com/icon?family=Material+Icons">
+			@font-face {
+			  	font-family: 'Material Icons';
+			  	font-style: normal;
+			  	font-weight: 400;
+			  	src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://fonts.gstatic.com/s/materialicons/v21/2fcrYFNaTjcS6g4U3t-Y5UEw0lE80llgEseQY3FEmqw.woff2) format('woff2');
+				}
+
+				.material-icons {
+			  	font-family: 'Material Icons';
+			  	font-weight: normal;
+			  	font-style: normal;
+			  	font-size: 24px;
+			  	line-height: 1;
+			  	letter-spacing: normal;
+			  	text-transform: none;
+			  	display: inline-block;
+			  	white-space: nowrap;
+			  	word-wrap: normal;
+			  	direction: ltr;
+			  	-webkit-font-feature-settings: 'liga';
+			  	-webkit-font-smoothing: antialiased;
+				}
+		</style>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+		<title>Responsive Timeline</title>
+	</head>
+	<body>
+		<section id="button-list">
+			<i class="material-icons" id="autorenew">autorenew</i>
+			<i class="material-icons" id="refresh">refresh</i>
+			<ul class="button-caption">
+				<li class="caption">Rotate</li>
+				<li class="caption">Refresh</li>
+			</ul>
+		</section>
+		<section id="cd-horizontal-timeline">
+			<div id="timeline">
+				<div class="events-wrapper">
+					<div class="events">
+						<ol>
+							<li><a href="#0" data-date="16/01/2014" class="selected">16 Jan</a></li>
+							<li><a href="#0" data-date="28/02/2014">28 Feb</a></li>
+							<li><a href="#0" data-date="20/04/2014">20 Mar</a></li>
+							<li><a href="#0" data-date="20/05/2014">20 May</a></li>
+							<li><a href="#0" data-date="09/07/2014">09 Jul</a></li>
+							<li><a href="#0" data-date="30/08/2014">30 Aug</a></li>
+							<li><a href="#0" data-date="15/09/2014">15 Sep</a></li>
+							<li><a href="#0" data-date="01/11/2014">01 Nov</a></li>
+							<li><a href="#0" data-date="10/12/2014">10 Dec</a></li>
+							<li><a href="#0" data-date="19/01/2015">29 Jan</a></li>
+							<li><a href="#0" data-date="03/03/2015">3 Mar</a></li>
+						</ol>
+
+						<span class="filling-line" aria-hidden="true"></span>
+					</div> <!-- .events -->
+				</div> <!-- .events-wrapper -->
+					
+				<ul class="cd-timeline-navigation">
+					<li><a href="#0" class="prev inactive">Prev</a></li>
+					<li><a href="#0" class="next">Next</a></li>
+				</ul> <!-- .cd-timeline-navigation -->
+			</div> <!-- .timeline -->
+
+
+			<div class="events-content">
+				<ol>
+					<li class="selected" data-date="16/01/2014">
+						<h2>Horizontal Timeline</h2>
+						<em>January 16th, 2014</em>
+						<p>	
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+						</p>
+					</li>
+
+					<li data-date="28/02/2014">
+						<h2>Event title here</h2>
+						<em>February 28th, 2014</em>
+						<p>	
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+						</p>
+					</li>
+
+					<li data-date="20/04/2014">
+						<h2>Event title here</h2>
+						<em>March 20th, 2014</em>
+						<p>	
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+						</p>
+					</li>
+
+					<li data-date="20/05/2014">
+						<h2>Event title here</h2>
+						<em>May 20th, 2014</em>
+						<p>	
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+						</p>
+					</li>
+
+					<li data-date="09/07/2014">
+						<h2>Event title here</h2>
+						<em>July 9th, 2014</em>
+						<p>	
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+						</p>
+					</li>
+
+					<li data-date="30/08/2014">
+						<h2>Event title here</h2>
+						<em>August 30th, 2014</em>
+						<p>	
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+						</p>
+					</li>
+
+					<li data-date="15/09/2014">
+						<h2>Event title here</h2>
+						<em>September 15th, 2014</em>
+						<p>	
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+						</p>
+					</li>
+
+					<li data-date="01/11/2014">
+						<h2>Event title here</h2>
+						<em>November 1st, 2014</em>
+						<p>	
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+						</p>
+					</li>
+
+					<li data-date="10/12/2014">
+						<h2>Event title here</h2>
+						<em>December 10th, 2014</em>
+						<p>	
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+						</p>
+					</li>
+
+					<li data-date="19/01/2015">
+						<h2>Event title here</h2>
+						<em>January 19th, 2015</em>
+						<p>	
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+						</p>
+					</li>
+
+					<li data-date="03/03/2015">
+						<h2>Event title here</h2>
+						<em>March 3rd, 2015</em>
+						<p>	
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+						</p>
+					</li>
+				</ol>
+			</div> <!-- .events-content -->
+		</section>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="main.js"></script>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  	ga('create', 'UA-48014931-1', 'codyhouse.co');
+		  	ga('send', 'pageview');
+
+		  	jQuery(document).ready(function($){
+		  		$('.close-carbon-adv').on('click', function(event){
+		  			event.preventDefault();
+		  			$('#carbonads-container').hide();
+		  		});
+		  	});
+		</script>
+	</body>
+</html>
+
